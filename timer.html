@@ -1,0 +1,117 @@
+
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>کرنومتر</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                direction: rtl;
+                bbackground: rgb(123, 107, 200);
+                background: linear-gradient(90deg , rgb(123, 107, 200) 23%, rgb(0, 212, 255) 100%);
+                font-family: tahoma;
+                color: #FFF;
+            }
+            .cc {
+                max-width: 85em;
+                min-width: 320px;
+                margin: 0 auto;
+                padding: 0 0.5em;
+                position: relative;
+                box-sizing: border-box;
+            }
+            h1 {
+                text-align: center;
+                line-height: 3em;
+            }
+            .box {
+                margin: 0 auto;
+                width: 60%;
+                text-align: center;
+                border: 1px solid #FFF;
+                padding: 3em;
+            }
+            button {
+                background: #03aee3;
+                border: 1px solid #FFF;
+                color: #FFF;
+                padding: 1em 2em;
+                border-radius: 5px;
+                font-size: 1em;
+                transition: all 0.5s ease-in-out;
+            }
+            button:hover {
+                color: #03aee3;
+                background: #FFF;
+            }
+            #time {
+                margin-bottom: 1em;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ساخت کرنومتر با جاوااسکریپت و HTML</h1>
+        <div class="cc">
+            <div class="box">
+                <div id="time">
+                    <span id="seconds">00</span>
+                    :
+                    <span id="minutes">00</span>
+                </div>
+                <button onclick="start()">شروع</button>
+                <button onclick="stop()">توقف</button>
+                <button onclick="reset()">شروع مجدد</button>
+            </div>
+        </div>
+    
+        <script>
+            var min = document.getElementById( 'minutes' );
+            var sec = document.getElementById( 'seconds' );
+            var minutes = 0;
+            var seconds = 0;
+            var Interval;
+    
+            function start() {
+                clearInterval( Interval );
+                Interval = setInterval( startTimer, 999 );
+            }
+    
+            function stop() {
+                clearInterval( Interval );
+            }
+    
+            function reset() {
+                clearInterval( Interval );
+                sec.innerHTML = '00';
+                min.innerHTML = '00';
+                minutes = 0;
+                seconds = 0;
+            }
+    
+            function startTimer() {
+                seconds++;
+    
+                if ( seconds == 60 ) {
+                    seconds = 0;
+                    minutes++;
+                }
+    
+                if( seconds <= 9 ) {
+                    sec.innerHTML = "0" + seconds;
+                } else {
+                    sec.innerHTML =  seconds;
+                }
+    
+                if ( minutes <= 9 ) {
+                    min.innerHTML = "0" + minutes;
+                } else {
+                    min.innerHTML = minutes;
+                }
+    
+            }
+        </script>
+    </body>
+    </html>
