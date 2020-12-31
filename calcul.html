@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+    <table border="1">
+        <tr bgcolor="#99FFFF">
+
+            <td colspan="4" id='screen'></td>
+
+        </tr>
+        </div>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><input name="" type="button" id="btnBackspace" value="b" onClick="clickDelete()"></td>
+            <td><input name="" type="button" value="C" onClick="cleanall()"></td>
+        </tr>
+
+        <tr>
+            <td><input name="" type="button" value="1" onClick="show(1)"></td>
+            <td><input name="" type="button" value="2" onClick="show(2)"></td>
+            <td><input name="" type="button" value="3" onClick="show(3)"></td>
+            <td><input name="" type="button" value="+" onClick="show('+')"></td>
+        </tr>
+        <tr>
+            <td><input name="" type="button" value="4" onClick="show(4)"></td>
+            <td><input name="" type="button" value="5" onClick="show(5)"></td>
+            <td><input name="" type="button" value="6" onClick="show(6)"></td>
+            <td><input name="" type="button" value="-" onClick="show('-')"></td>
+        </tr>
+        <tr>
+            <td><input name="" type="button" value="7" onClick="show(7)"></td>
+            <td><input name="" type="button" value="8" onClick="show(8)"></td>
+            <td><input name="" type="button" value="9" onClick="show(9)"></td>
+            <td><input name="" type="button" value="*" onClick="show('*')"></td>
+        </tr>
+        <tr>
+            <td><input name="" type="button" value="0" onClick="show('0')"></td>
+            <td><input name="" type="button" value="." onClick="show('.')"></td>
+            <td><input name="" type="button" value="=" onClick="mosavi()"></td>
+            <td><input name="" type="button" value="/" onClick="show('/')"></td>
+        </tr>
+
+    </table>
+    <script type="text/javascript">
+        function show(x) {
+
+
+            var old = document.getElementById('screen').innerHTML;
+            document.getElementById('screen').innerHTML = old + x;
+            var str = document.getElementById('screen').innerHTML;
+            var res = str.substring(str.length - 2, str.length);
+            if (res == "++" || res == "+-" || res == "+/" || res == "+*") {
+                clickDelete();
+
+            } else if (res == "--" || res == "-+" || res == "-/" || res == "-*") {
+                clickDelete();
+            } else if (res == "//" || res == "/+" || res == "/-" || res == "/*") {
+                clickDelete();
+            } else if (res == "**" || res == "*+" || res == "*-" || res == "*/") {
+                clickDelete();
+            }
+
+        }
+
+        function mosavi() {
+            var y = document.getElementById('screen').innerHTML;
+            document.getElementById('screen').innerHTML = eval(y);
+        }
+
+
+        function init() {
+            back.onclick = function() {
+                clickDelete();
+            }
+        }
+
+        function cleanall() {
+            document.getElementById('screen').innerHTML = '';
+        }
+
+        function clickDelete() {
+            var stringValue = document.getElementById("screen").innerHTML;
+            var stringLength = stringValue.length;
+            if (stringLength > 1) {
+                document.getElementById("screen").innerHTML = stringValue.substring(0, stringLength - 1)
+            } else {
+                document.getElementById("screen").innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>
