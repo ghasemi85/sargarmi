@@ -1,0 +1,266 @@
+@media only screen and (max-width: 300px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        font-size: 24px;
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        font-size: 24px;
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 300px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin-bottom: 10px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 400px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 40px 10px 40px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 550px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 110px 10px 110px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 670px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 160px 10px 160px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 800px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 230px 10px 230px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 950px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 300px 10px 300px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 1100px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 400px 10px 400px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 1260px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 450px 10px 450px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 1400px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 530px 10px 530px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 1570px) {        
+    a {
+        text-decoration:none;
+    }
+    div {
+        border: 3px solid #222;
+        border-radius: 15px;
+        background-color: #222;
+        margin: 0px 580px 10px 580px;
+    }
+    h1 {
+        text-align: center;
+        color: snow;
+    }
+    h1.no {
+        text-align: center;
+        color: greenyellow;
+    }
+    h1.rid {
+        text-align: center;
+        color: red;
+    }
+}
